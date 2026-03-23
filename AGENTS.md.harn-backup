@@ -1,0 +1,24 @@
+# AGENTS.md
+
+## Project Overview
+This project is a harness analysis engine for Claude Code sessions. It analyzes session data and recommends harness improvements.
+
+## Directory Purposes
+- src/db/: Database logic
+- src/analysis/: Session and data analysis
+- src/commands/: CLI and command handling
+- src/display/: Output formatting and display
+
+## Agent Rules
+- Always request file paths and specific tasks in user prompts.
+- After completing a task, propose a test run if applicable.
+- Commit changes when a task is complete and verified.
+- Summarize actions and next steps after each major turn.
+
+## Prompting Guidelines
+- Encourage users to specify file paths and concrete actions in every prompt.
+- If a prompt is vague, ask clarifying questions before proceeding.
+
+## Completion Rules
+- When a task is finished, propose a test run to verify changes.
+- If tests pass or the user approves, commit the changes with a clear message.

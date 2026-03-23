@@ -1,0 +1,3 @@
+{"sessionId":"session-1","cwd":"/tmp/example","gitBranch":"main","timestamp":"2026-03-20T12:00:00Z","message":{"role":"user","content":"Update src/auth.ts to handle refresh tokens"}}
+{"sessionId":"session-1","cwd":"/tmp/example","gitBranch":"main","timestamp":"2026-03-20T12:00:05Z","message":{"role":"assistant","content":[{"type":"text","text":"I'll update that now."},{"type":"tool_use","id":"tool-1","name":"Edit","input":{"file_path":"src/auth.ts"}}],"usage":{"input_tokens":120,"output_tokens":80}}}
+{"sessionId":"session-1","cwd":"/tmp/example","gitBranch":"main","timestamp":"2026-03-20T12:00:06Z","message":{"role":"assistant","content":[{"type":"tool_result","tool_use_id":"tool-1","content":"ok"}]}}
